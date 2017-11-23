@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_PROVIDED_GUI",
+						"text35" : "finland#ENTER",
+						"expectedValue65" : "https://fi.search.yahoo.com/yhs/search?hspart=comodo&hsimp=yhs-com_chrome&p=test&type=%s_test001_ds_%s"
+					}
+				]
+			}
+		]
+}

@@ -1,0 +1,41 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "comodo.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_EXTENDED_VALIDATION_HTTPS",
+					"failMessage42" : "Failed for comodo.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "3",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "paypal.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_EXTENDED_VALIDATION_HTTPS",
+					"failMessage42" : "Failed for paypal.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "6",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "visa.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_EXTENDED_VALIDATION_HTTPS",
+					"failMessage42" : "Failed for visa.com"
+				}
+			]
+		}
+		
+	]
+} 

@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "HOMEPAGE_CONFIGURABLE_SILENT",
+						"text56" : "sweden#ENTER",
+						"expectedValue76" : "http://se.yahoo.com/?fr=fpc-comodo&type=%s_%s_hp_%s"
+					}
+				]
+			}
+		]
+}

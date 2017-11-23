@@ -1,0 +1,170 @@
+{
+	"actions" : [
+		{
+			"orderId" : "1",
+			"type" : "FILE_EXISTS",
+			"parameters" : [
+				{
+					"filePath1" : "C:\\Test\\Comodo\\Dragon\\dragon.exe",
+					"failMessage1" : "File does NOT exist",
+					
+					"isNegateResult1" : "true",
+					"altFailMessage1" : "File exists"
+				}
+			]
+		},
+		{	
+			"orderId" : "2",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName2" : "dragon.exe", 
+					"timeout2" : "1000",
+					"failMessage2" : "Failed to close process",
+					"isOptional2" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "4",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName4" : "Un_A.exe", 
+					"timeout4" : "1000",
+					"failMessage4" : "Failed to close process",
+					"isOptional4" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "7",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName7" : "dragonsetup##version.exe", 
+					"timeout7" : "1000", 
+					"failMessage7" : "Failed to close process",
+					"isOptional7" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "8",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout8" : "2000"
+				}
+			]
+		},
+		{
+			"orderId" : "10",
+			"type" : "RUN_CMD",
+			"parameters" : [
+				{
+					"command10" : "",
+					"failMessage10" : "Failed to run command"
+				}
+			]
+		},
+		{
+			"orderId" : "11",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image11" : "\\DRAGON_INSTALL\\INSTALL_PORTABLE_VERSION_UPGRADE",
+					"timeout11" : "60000",
+					"isAssert11" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "13",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image13" : "\\DRAGON_INSTALL\\DRAGON_INSTALL_NEXT",
+					"timeout13" : "10000",
+					"isAssert13" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "20",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text20" : "C:\\Test\\Comodo\\Dragon"
+				}
+			]
+		},
+		{
+			"orderId" : "25",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image25" : "\\DRAGON_INSTALL\\DRAGON_INSTALL_NEXT",
+					"timeout25" : "10000",
+					"isAssert25" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "28",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image28" : "\\DRAGON_INSTALL\\DRAGON_INSTALL_NEXT",
+					"timeout28" : "10000",
+					"isAssert28" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "46",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image46" : "\\DRAGON_INSTALL\\DRAGON_INSTALL_INSTALL",
+					"timeout46" : "10000",
+					"isAssert46" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "51",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image51" : "\\DRAGON_INSTALL\\DRAGON_INSTALL_FINISH",
+					"timeout51" : "60000",
+					"isAssert51" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "56",
+			"type" : "WAIT_FOR_PROCESS_TO_FINISH",
+			"parameters" : [
+				{
+					"processName56" : "dragonsetup##version.exe",
+					"timeout56" : "60000",			
+					"isOptional" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "61",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{
+					"processName61" : "dragon.exe",
+					"timeout61" : "2000",
+					"failMessage61" : "Failed to close process",
+					"isOptional61" : "true"
+				}
+			]
+		}
+	]
+}

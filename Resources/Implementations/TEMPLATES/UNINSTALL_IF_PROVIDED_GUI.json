@@ -1,0 +1,110 @@
+{
+	"actions" : [
+			{
+				"orderId" : "1",
+				"type" : "FILE_EXISTS",
+				"x86_parameters" : [
+					{
+						"filePath1" : "C:\\Program Files\\Comodo\\Dragon\\master_preferences",
+						"failMessage1" : "File does NOT exist"			
+					}
+				],
+				"x64_parameters" : [
+					{
+						"filePath1" : "C:\\Program Files (x86)\\Comodo\\Dragon\\master_preferences",
+						"failMessage1" : "File does NOT exist"
+					}
+				]
+			},
+			{	
+				"orderId" : "6",
+				"type" : "EXISTS_IN_TEXT_FILE",
+				"x86_parameters" : [
+					{ 
+						"filePath6" : "C:\\Program Files\\Comodo\\Dragon\\master_preferences",
+						"failMessage6" : "browser is installed in configurable mode",
+						"text6" : "test001"
+					}
+				],
+				"x64_parameters" : [
+					{ 
+						"filePath6" : "C:\\Program Files (x86)\\Comodo\\Dragon\\master_preferences",
+						"failMessage6" : "browser is installed in configurable mode",
+						"text6" : "test001"
+					}
+				]
+			},
+			{	
+				"orderId" : "11",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{ 
+						"processName11" : "dragon.exe", 
+						"timeout11" : "1000", 
+						"failMessage11" : "Failed to close process",
+						"isOptional11" : "true"
+					}
+				]
+			},
+			{	
+				"orderId" : "16",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{ 
+						"processName16" : "Un_A.exe", 
+						"timeout16" : "1000", 
+						"failMessage16" : "Failed to close process",
+						"isOptional16" : "true"
+					}
+				]
+			},
+			{	
+				"orderId" : "21",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{ 
+						"processName21" : "dragonsetup##version.exe", 
+						"timeout21" : "1000", 
+						"failMessage21" : "Failed to close process",
+						"isOptional21" : "true"
+					}
+				]
+			},
+			{
+				"orderId" : "26",
+				"type" : "RUN_CMD",
+				"x86_parameters" : [
+					{
+						"command26" : "C:\\Program Files\\Comodo\\Dragon\\uninstall.exe /S",
+						"failMessage26" : "Failed to run command"
+					}
+				],
+				"x64_parameters" : [
+					{
+						"command26" : "C:\\Program Files (x86)\\Comodo\\Dragon\\uninstall.exe /S",
+						"failMessage26" : "Failed to run command"
+					}
+				]
+			},
+			{	
+				"orderId" : "31",
+				"type" : "WAIT",
+				"parameters" : [
+					{ 
+						"timeout31" : "2000"
+					}
+				]
+			},
+			{
+				"orderId" : "36",
+				"type" : "WAIT_FOR_PROCESS_TO_FINISH",
+				"parameters" : [
+					{
+						"processName36" : "Un_A.exe",
+						"timeout36" : "60000",			
+						"isOptional" : "true"
+					}
+				]
+			}
+		]
+}

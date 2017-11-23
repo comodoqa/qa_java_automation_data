@@ -1,0 +1,28 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "algarennes.fr#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_LET'S_ENCRYPT_HTTPS",
+					"failMessage42" : "Failed for algarennes.fr"
+				}
+			]
+		},
+		{	
+			"orderId" : "2",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "www.c-permis-de-conduire.com/#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_LET'S_ENCRYPT_HTTPS",
+					"failMessage42" : "Failed for www.c-permis-de-conduire.com"
+				}
+			]
+		}
+	]
+} 

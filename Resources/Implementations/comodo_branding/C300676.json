@@ -1,0 +1,139 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "UNINSTALL_IF_WRONG_VERSION"
+					}
+				]
+			},
+			{	
+				"orderId" : "4",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "INSTALL_DRAGON_SILENT",
+						"command26" : "C:\\dragonsetup.exe --silent"
+					}
+				]
+			},
+			{
+				"orderId" : "7",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{
+						"processName7" : "dragon.exe",
+						"timeout7" : "2000",
+						"failMessage7" : "Failed to close process",
+						"isOptional7" : "true"
+					}
+				]
+			}
+			{	
+				"orderId" : "10",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout10" : "5000"
+					}
+				]
+			},
+			{	
+				"orderId" : "11",
+				"type" : "CLEAR_USER_DATA",
+				"parameters" : [
+					{ 
+						"path11" : "Comodo\\Dragon", 
+						"failMessage11" : "Failed to clear user data" 
+					}
+				]
+			},
+			{
+				"orderId" : "13",
+				"type" : "RUN_CMD",
+				"x86_parameters" : [
+					{
+						"command13" : "C:\\Program Files\\Comodo\\Dragon\\dragon.exe",
+						"failMessage13" : "Failed to run command"
+					}
+				],
+				"x64_parameters" : [
+					{
+						"command13" : "C:\\Program Files (x86)\\Comodo\\Dragon\\dragon.exe",
+						"failMessage13" : "Failed to run command"
+					}
+				]
+			},
+			{	
+				"orderId" : "14",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout14" : "2000"
+					}
+				]
+			},
+			{	
+				"orderId" : "16",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text16" : "t",
+						"modifiers16" : "CTRL"
+					}
+				]
+			},
+			{	
+				"orderId" : "19",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout19" : "1000"
+					}
+				]
+			},
+			{	
+				"orderId" : "21",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text21" : "about://settings#ENTER"
+					}
+				]
+			},
+			{	
+				"orderId" : "22",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout22" : "2000"
+					}
+				]
+			},
+			{
+				"orderId" : "24",
+				"type" : "OCR_TEXT_FIND",
+				"parameters" : [
+					{
+						"text24" : "Sign in to get your bookmarks, history, passwords and other settings on all your devices. You'll also automatically",
+						"timeout24" : "4000",			
+						"isAssert24" : "true"
+					}
+				]
+			},
+			{
+				"orderId" : "27",
+				"type" : "OCR_TEXT_FIND",
+				"parameters" : [
+					{
+						"text27" : "be signed in to your Google services. Learn more",
+						"timeout27" : "100",			
+						"isAssert27" : "true"
+					}
+				]
+			}
+		]
+	
+}

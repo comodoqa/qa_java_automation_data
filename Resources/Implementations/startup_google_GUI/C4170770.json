@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "HOMEPAGE_CONFIGURABLE_GUI",
+						"text56" : "romania#ENTER",
+						"expectedValue76" : "https://www.google.com/"
+					}
+				]
+			}
+		]
+}

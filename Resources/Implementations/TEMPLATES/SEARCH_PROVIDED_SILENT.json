@@ -1,0 +1,244 @@
+{
+	"actions" : [
+		{
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "UNINSTALL_IF_CONFIGURABLE_GUI"
+				}
+			]
+		},
+		{	
+			"orderId" : "2",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "UNINSTALL_IF_WRONG_VERSION"
+				}
+			]
+		},
+		{	
+			"orderId" : "4",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "INSTALL_DRAGON_SILENT",
+					"command26" : "C:\\dragonsetup##version.exe --cid=test --silent"
+				}
+			]
+		},
+		{	
+			"orderId" : "7",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName7" : "dragon.exe", 
+					"timeout7" : "2000", 
+					"failMessage7" : "Failed to close process", 
+					"isOptional7" : "true" 
+				}
+			]
+		},
+		{	
+			"orderId" : "10",
+			"type" : "WAIT",
+			"parameters" : [
+				{ 
+					"timeout10" : "1000" 
+				}
+			]
+		},
+		{	
+			"orderId" : "11",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName11" : "dragon.exe", 
+					"timeout11" : "1000",
+					"failMessage11" : "Failed to close process",
+					"isOptional11" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "13",
+			"type" : "CLEAR_USER_DATA",
+			"parameters" : [
+				{ 
+					"path13" : "Comodo\\Dragon", 
+					"failMessage13" : "Failed to clear user data" 
+				}
+			]
+		},
+		{	
+			"orderId" : "16",
+			"type" : "TYPE",
+			"parameters" : [
+				{ 
+					"text16" : "r", 
+					"modifiers16" : "WIN" 
+				}
+			]
+		},
+		{	
+			"orderId" : "19",
+			"type" : "WAIT",
+			"parameters" : [
+				{ 
+					"timeout19" : "500" 
+				}
+			]
+		},
+		{	
+			"orderId" : "22",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text22" : "intl.cpl#ENTER"
+				}
+			]
+		},
+		{	
+			"orderId" : "25",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout25" : "400"
+				}
+			]
+		},
+		{	
+			"orderId" : "28",
+			"type" : "TYPE_COMBO",
+			"parameters" : [
+				{
+					"holdDown28" : "CTRL",
+					"key28" : "TAB"
+				}
+			]
+		},
+		{	
+			"orderId" : "31",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout31" : "400"
+				}
+			]
+		},
+		{	
+			"orderId" : "35",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text35" : ""
+				}
+			]
+		},
+		{	
+			"orderId" : "38",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout38" : "400"
+				}
+			]
+		},
+		{
+			"orderId" : "41",
+			"type" : "RUN_CMD",
+			"x86_parameters" : [
+				{
+					"command41" : "C:\\Program Files\\Comodo\Dragon\\dragon.exe",
+					"failMessage41" : "Failed to run command"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"command41" : "C:\\Program Files (x86)\\Comodo\Dragon\\dragon.exe",
+					"failMessage41" : "Failed to run command"
+				}
+			]
+		},
+		{	
+			"orderId" : "44",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout44" : "5000"
+				}
+			]
+		},
+		{	
+			"orderId" : "47",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text47" : "n",
+					"modifiers47" : "CTRL"
+				}
+			]
+		},
+		{	
+			"orderId" : "50",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout50" : "1000"
+				}
+			]
+		},
+		{	
+			"orderId" : "53",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text53" : "test#ENTER"
+				}
+			]
+		},
+		{	
+			"orderId" : "56",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout56" : "15000"
+				}
+			]
+		},
+		{	
+			"orderId" : "59",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{
+					"processName59" : "dragon.exe",
+					"timeout59" : "2000",
+					"failMessage59" : "Failed to close process"
+				}
+			]
+		},
+		{	
+			"orderId" : "62",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout62" : "1000"
+				}
+			]
+		},
+		{
+			"orderId" : "65",
+			"type" : "EXISTS_IN_COMODO_BROWSER_HISTORY",
+			"parameters" : [
+				{
+					"isPortable65" : "false",
+					"failMessage65" : "Expected result does not match actual result\nExpected Result: %s\nActual Result: %s",
+					"expectedValue65" : "",
+					"isCIDProvided65" : "true"
+					"isAssert65" : "true"
+				}
+			]
+		}
+	]
+}

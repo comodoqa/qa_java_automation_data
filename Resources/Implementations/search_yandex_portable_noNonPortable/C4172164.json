@@ -1,0 +1,15 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "SEARCH_CONFIGURABLE_PORTABLE_NO_NONPORTABLE",
+					"text28" : "russia#ENTER",
+					"expectedValue58" : "http://yandex.ru/yandsearch?text=test&clid=2051418"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_PROVIDED_SILENT",
+						"text35" : "belarus#ENTER",
+						"expectedValue65" : "http://yandex.ru/yandsearch?text=test&clid=2051418"
+					}
+				]
+			}
+	]
+}

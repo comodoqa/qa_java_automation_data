@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_PROVIDED_SILENT",
+						"text35" : "turkey#ENTER",
+						"expectedValue65" : "http://www.yandex.com.tr/yandsearch?text=test&clid=2052687"
+					}
+				]
+			}
+	]
+}

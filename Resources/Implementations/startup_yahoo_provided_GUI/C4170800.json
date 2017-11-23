@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "HOMEPAGE_PROVIDED_GUI",
+						"text56" : "mexico#ENTER",
+						"expectedValue76" : "http://mx.yahoo.com/?fr=fpc-comodo&type=%s_test001_hp_%s"
+					}
+				]
+			}
+		]
+}

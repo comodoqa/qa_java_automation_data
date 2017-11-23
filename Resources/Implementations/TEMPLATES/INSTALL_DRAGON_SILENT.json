@@ -1,0 +1,126 @@
+{
+	"actions" : [
+		{
+			"orderId" : "1",
+			"type" : "REGISTRY_KEY_EXISTS",
+			"x86_parameters" : [
+				{
+					"isLocalMachine1" : "true",
+					"key1" : "SOFTWARE\\ComodoGroup\\Dragon",
+					"value1" : "Version",
+					"failMessage1" : "Registry key does not exist",
+					"altFailMessage1" : "Registry exists",
+					"isNegateResult1" : "true"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"isLocalMachine1" : "true",
+					"key1" : "SOFTWARE\\WOW6432Node\\ComodoGroup\\Dragon",
+					"value1" : "Version",
+					"failMessage1" : "Registry key does not exist",
+					"altFailMessage1" : "Registry exists",
+					"isNegateResult1" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "6",
+			"type" : "FILE_EXISTS",
+			"x86_parameters" : [
+				{
+					"filePath6" : "C:\\Program Files\\Comodo\\Dragon\\dragon.exe",
+					"failMessage6" : "File does NOT exist",
+					"altFailMessage6" : "File exists",
+					"isNegateResult6" : "true"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"filePath6" : "C:\\Program Files (x86)\\Comodo\\Dragon\\dragon.exe",
+					"failMessage6" : "File does NOT exist",
+					"altFailMessage6" : "File exists",
+					"isNegateResult6" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "11",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName11" : "dragon.exe", 
+					"timeout11" : "1000",
+					"failMessage11" : "Failed to close process",
+					"isOptional11" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "16",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName16" : "Un_A.exe", 
+					"timeout16" : "1000", 
+					"failMessage16" : "Failed to close process",
+					"isOptional16" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "21",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName21" : "dragonsetup##version.exe", 
+					"timeout21" : "1000", 
+					"failMessage21" : "Failed to close process",
+					"isOptional21" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "23",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout23" : "2000"
+				}
+			]
+		},
+		{
+			"orderId" : "26",
+			"type" : "RUN_CMD",
+			"parameters" : [
+				{
+					"command26" : "",
+					"failMessage26" : "Failed to run command"
+				}
+			]
+		},
+		{
+			"orderId" : "56",
+			"type" : "WAIT_FOR_PROCESS_TO_FINISH",
+			"parameters" : [
+				{
+					"processName56" : "dragonsetup##version.exe",
+					"timeout56" : "60000",			
+					"isOptional" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "61",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{
+					"processName61" : "dragon.exe",
+					"timeout61" : "2000",
+					"failMessage61" : "Failed to close process",
+					"isOptional61" : "true"
+				}
+			]
+		}
+	]
+}

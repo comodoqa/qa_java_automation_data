@@ -1,0 +1,15 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "HOMEPAGE_CONFIGURABLE_PORTABLE_NO_NONPORTABLE",
+					"text28" : "portugal#ENTER",
+					"expectedValue43" : "https://www.google.com/"
+				}
+			]
+		}
+	]
+}

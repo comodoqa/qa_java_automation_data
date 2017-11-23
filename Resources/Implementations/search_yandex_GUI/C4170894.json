@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_CONFIGURABLE_GUI",
+						"text34" : "turkey#ENTER",
+						"expectedValue64" : "http://www.yandex.com.tr/yandsearch?text=test&clid=2052687"
+					}
+				]
+			}
+	]
+}

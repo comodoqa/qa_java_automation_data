@@ -1,0 +1,52 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "ro.yahoo.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_SECURE_HTTPS",
+					"failMessage42" : "Failed for ro.yahoo.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "3",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "google.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_SECURE_HTTPS",
+					"failMessage42" : "google.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "5",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "amazon.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_SECURE_HTTPS",
+					"failMessage42" : "amazon.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "7",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "aol.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_SECURE_HTTPS",
+					"failMessage42" : "aol.com"
+				}
+			]
+		}
+	]
+} 

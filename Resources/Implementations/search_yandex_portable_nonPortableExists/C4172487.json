@@ -1,0 +1,15 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "SEARCH_CONFIGURABLE_PORTABLE_EXISTS_NONPORTABLE",
+					"text28" : "turkey#ENTER",
+					"expectedValue58" : "http://www.yandex.com.tr/yandsearch?text=test&clid=2052687"
+				}
+			]
+		}
+	]
+}

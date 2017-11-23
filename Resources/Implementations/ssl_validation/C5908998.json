@@ -1,0 +1,17 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "workflowy.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_LOW_VALIDATION_HTTPS",
+					"failMessage42" : "Failed for workflowy.com"
+				}
+			]
+		}
+		
+	]
+} 

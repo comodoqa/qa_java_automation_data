@@ -1,0 +1,15 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "HOMEPAGE_CONFIGURABLE_PORTABLE_NO_NONPORTABLE",
+					"text28" : "peru#ENTER",
+					"expectedValue43" : "http://pe.yahoo.com/?fr=fpc-comodo&type=%s_%s_hp_%s"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "HOMEPAGE_CONFIGURABLE_PORTABLE_EXISTS_NONPORTABLE",
+					"text28" : "denmark#ENTER",
+					"expectedValue43" : "http://dk.yahoo.com/?fr=fpc-comodo&type=%s_%s_hp_%s"
+				}
+			]
+		}
+	]
+}

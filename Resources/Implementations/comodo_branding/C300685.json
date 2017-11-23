@@ -1,0 +1,183 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "UNINSTALL_IF_WRONG_VERSION"
+					}
+				]
+			},
+			{	
+				"orderId" : "4",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "INSTALL_DRAGON_SILENT",
+						"command26" : "C:\\dragonsetup.exe --silent"
+					}
+				]
+			},
+			{
+				"orderId" : "7",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{
+						"processName7" : "dragon.exe",
+						"timeout7" : "2000",
+						"failMessage7" : "Failed to close process",
+						"isOptional7" : "true"
+					}
+				]
+			}
+			{	
+				"orderId" : "10",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout10" : "1000"
+					}
+				]
+			},
+			{	
+				"orderId" : "11",
+				"type" : "CLEAR_USER_DATA",
+				"parameters" : [
+					{ 
+						"path11" : "Comodo\\Dragon", 
+						"failMessage11" : "Failed to clear user data" 
+					}
+				]
+			},
+			{
+				"orderId" : "13",
+				"type" : "RUN_CMD",
+				"x86_parameters" : [
+					{
+						"command13" : "C:\\Program Files\\Comodo\\Dragon\\dragon.exe",
+						"failMessage13" : "Failed to run command"
+					}
+				],
+				"x64_parameters" : [
+					{
+						"command13" : "C:\\Program Files (x86)\\Comodo\\Dragon\\dragon.exe",
+						"failMessage13" : "Failed to run command"
+					}
+				]
+			},
+			{	
+				"orderId" : "14",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout14" : "2000"
+					}
+				]
+			},
+			{
+				"orderId" : "15",
+				"type" : "CLICK",
+				"parameters" : [
+					{
+						"image15" : "\\DRAGON_MAKE_DEFAULT_BROWSER\\MAKE_DEFAULT_CHROME",
+						"timeout15" : "8000",
+						"isAssert15" : "true"
+					}
+				]
+			},
+			{	
+				"orderId" : "16",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text16" : "t",
+						"modifiers16" : "CTRL"
+					}
+				]
+			},
+			{	
+				"orderId" : "19",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout19" : "2000"
+					}
+				]
+			},
+			{	
+				"orderId" : "21",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text21" : "chrome://settings#ENTER"
+					}
+				]
+			},
+			{	
+				"orderId" : "24",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout24" : "2000"
+					}
+				]
+			},
+			{
+				"orderId" : "25",
+				"type" : "CLICK",
+				"parameters" : [
+					{
+						"image25" : "\\DRAGON_MAKE_DEFAULT_BROWSER\\CLICK_MAKE_DEFAULT_CHROME",
+						"timeout25" : "8000",
+						"isAssert25" : "true"
+					}
+				]
+			},
+			{
+				"orderId" : "27",
+				"type" : "CLICK",
+				"parameters" : [
+					{
+						"image27" : "\\DRAGON_MAKE_DEFAULT_BROWSER\\MAKE_DEFAULT_BROWSER",
+						"timeout27" : "8000",
+						"isAssert27" : "true"
+					}
+				]
+			},
+			{
+				"orderId" : "32",
+				"type" : "CLICK",
+				"parameters" : [
+					{
+						"image32" : "\\DRAGON_MAKE_DEFAULT_BROWSER\\GOOGLE_CHROME_DEFAULT",
+						"timeout32" : "8000",
+						"isAssert32" : "true"
+					}
+				]
+			},
+			{
+				"orderId" : "35",
+				"type" : "CLICK",
+				"parameters" : [
+					{
+						"image35" : "\\DRAGON_MAKE_DEFAULT_BROWSER\\COMODO_DRAGON_DEFAULT",
+						"timeout35" : "8000",
+						"isAssert35" : "true"
+					}
+				]
+			},
+			{
+				"orderId" : "38",
+				"type" : "CLICK",
+				"parameters" : [
+					{
+						"image38" : "\\DRAGON_MAKE_DEFAULT_BROWSER\\DEFAULT_BROWSER_IS_CURRENTLY_DRAGON",
+						"isAssert38" : "true"
+					}
+				]
+			},
+			
+		]
+	
+} 

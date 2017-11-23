@@ -1,0 +1,15 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "SEARCH_CONFIGURABLE_PORTABLE_NO_NONPORTABLE",
+					"text28" : "italy#ENTER",
+					"expectedValue58" : "https://it.search.yahoo.com/yhs/search?hspart=comodo&hsimp=yhs-com_chrome&p=test&type=%s_%s_ds_%s"
+				}
+			]
+		}
+	]
+}

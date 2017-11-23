@@ -1,0 +1,18 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_POPUP_DETAILS",
+					"text34" : "ro.yahoo.com/?p=us#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_SECURE_HTTPS",
+					"text48" : "Secure connection",
+					"text54" : "The identity of this website has been verified by",
+				}
+			]
+		}
+		
+	]
+} 

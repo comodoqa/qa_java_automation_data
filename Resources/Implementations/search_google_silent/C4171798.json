@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_CONFIGURABLE_SILENT",
+						"text34" : "portugal#ENTER",
+						"expectedValue64" : "https://www.google.com/search?q=test&oq=test&ie=UTF-8"
+					}
+				]
+			}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "HOMEPAGE_CONFIGURABLE_GUI",
+						"text56" : "turkey#ENTER",
+						"expectedValue76" : "http://yandex.com.tr/?clid=2052686"
+					}
+				]
+			}
+		]
+}

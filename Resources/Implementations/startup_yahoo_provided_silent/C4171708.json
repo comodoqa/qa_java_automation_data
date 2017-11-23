@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "HOMEPAGE_PROVIDED_SILENT",
+						"text56" : "hong kong#ENTER",
+						"expectedValue76" : "http://hk.yahoo.com/?fr=fpc-comodo&type=%s_test001_hp_%s"
+					}
+				]
+			}
+		]
+}

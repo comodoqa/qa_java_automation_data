@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "HOMEPAGE_CONFIGURABLE_GUI",
+						"text56" : "argentina#ENTER",
+						"expectedValue76" : "http://ar.yahoo.com/?fr=fpc-comodo&type=%s_%s_hp_%s"
+					}
+				]
+			}
+		]
+}

@@ -1,0 +1,186 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "UNINSTALL_IF_PROVIDED_GUI"
+					}
+				]
+			},
+			{	
+				"orderId" : "2",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "UNINSTALL_IF_WRONG_VERSION"
+					}
+				]
+			},
+			{	
+				"orderId" : "6",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "INSTALL_DRAGON_GUI",
+						"command26" : "C:\\dragonsetup##version.exe"
+					}
+				]
+			},
+			{	
+				"orderId" : "9",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout9" : "1000"
+					}
+				]
+			},
+			{	
+				"orderId" : "11",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{ 
+						"processName11" : "dragon.exe", 
+						"timeout11" : "1000",
+						"failMessage11" : "Failed to close process",
+						"isOptional11" : "true"
+					}
+				]
+			},
+			{	
+				"orderId" : "21",
+				"type" : "CLEAR_USER_DATA",
+				"parameters" : [
+					{
+						"path21" : "Comodo\\Dragon",
+						"failMessage21" : "Failed to clear user data"
+					}
+				]
+			},
+			{	
+				"orderId" : "26",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text26" : "r",
+						"modifiers26" : "WIN"
+					}
+				]
+			},
+			{	
+				"orderId" : "31",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout31" : "500"
+					}
+				]
+			},
+			{	
+				"orderId" : "36",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text36" : "intl.cpl#ENTER"
+					}
+				]
+			},
+			{	
+				"orderId" : "41",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout41" : "400"
+					}
+				]
+			},
+			{	
+				"orderId" : "46",
+				"type" : "TYPE_COMBO",
+				"parameters" : [
+					{
+						"holdDown46" : "CTRL",
+						"key46" : "TAB"
+					}
+				]
+			},
+			{	
+				"orderId" : "51",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout51" : "400"
+					}
+				]
+			},
+			{	
+				"orderId" : "56",
+				"type" : "TYPE",
+				"parameters" : [
+					{
+						"text56" : ""
+					}
+				]
+			},
+			{
+				"orderId" : "57",
+				"type" : "RUN_CMD",
+				"x86_parameters" : [
+					{
+						"command57" : "C:\\Program Files\\Comodo\\Dragon\\dragon.exe",
+						"failMessage57" : "Failed to run command"
+					}
+				],
+				"x64_parameters" : [
+					{
+						"command57" : "C:\\Program Files (x86)\\Comodo\\Dragon\\dragon.exe",
+						"failMessage57" : "Failed to run command"
+					}
+				]
+			},	
+			{	
+				"orderId" : "61",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout61" : "15000"
+					}
+				]
+			},
+			{	
+				"orderId" : "66",
+				"type" : "CLOSE_PROCESS",
+				"parameters" : [
+					{
+						"processName66" : "dragon.exe",
+						"timeout66" : "1000",
+						"failMessage66" : "Failed to close process"
+					}
+				]
+			},
+			{	
+				"orderId" : "71",
+				"type" : "WAIT",
+				"parameters" : [
+					{
+						"timeout71" : "1000"
+					}
+				]
+			},
+			{
+				"orderId" : "76",
+				"type" : "EXISTS_IN_COMODO_BROWSER_HISTORY",
+				"parameters" : [
+					{
+						"isPortable76" : "false",
+						"failMessage76" : "Expected result does not match actual result\nExpected Result: %s\nActual Result: %s",
+						"expectedValue76" : "",
+						"isAssert76" : "true"
+					}
+				]
+			}
+
+		]
+}

@@ -1,0 +1,151 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "UNINSTALL_IF_WRONG_VERSION"
+				}
+			]
+		},
+		{	
+			"orderId" : "5",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "INSTALL_DRAGON_SILENT",
+					"command26" : "C:\\dragonsetup##version.exe --silent"
+				}
+			]
+		},
+		{	
+			"orderId" : "9",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName9" : "dragon.exe", 
+					"timeout9" : "1000",
+					"failMessage9" : "Failed to close process",
+					"isOptional9" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "13",
+			"type" : "WAIT_FOR_PROCESS_TO_FINISH",
+			"parameters" : [
+				{
+					"processName13" : "dragonsetup##version.exe",
+					"timeout13" : "60000",			
+					"isOptional13" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "17",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout17" : "1000"
+				}
+			]
+		},
+		{
+			"orderId" : "22",
+			"type" : "RUN_CMD",
+			"x86_parameters" : [
+				{
+					"command22" : "C:\\Program Files\\Comodo\\Dragon\\dragon.exe",
+					"failMessage22" : "Failed to run command"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"command22" : "C:\\Program Files (x86)\\Comodo\\Dragon\\dragon.exe",
+					"failMessage22" : "Failed to run command"
+				}
+			]
+		},	
+		{	
+			"orderId" : "24",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout24" : "2000"
+				}
+			]
+		},
+		{	
+			"orderId" : "25",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text25" : "t",
+					"modifiers25" : "CTRL"
+				}
+			]
+		},
+		{	
+			"orderId" : "29",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout29" : "2000"
+				}
+			]
+		},
+		{	
+			"orderId" : "34",
+			"type" : "TYPE",
+			"parameters" : [
+				{
+					"text34" : ""
+				}
+			]
+		},
+		{	
+			"orderId" : "38",
+			"type" : "WAIT",
+			"parameters" : [
+				{
+					"timeout38" : "2000"
+				}
+			]
+		},
+		{	
+			"orderId" : "42",
+			"type" : "CLICK",
+			"parameters" : [
+				{
+					"image42" : "",
+					"timeout42" : "2000",
+					"isAssert42" : "true" 
+				}
+			]
+		},
+		{
+			"orderId" : "48",
+			"type" : "OCR_TEXT_FIND",
+			"parameters" : [
+				{
+					"text48" : "",
+					"timeout48" : "2000",			
+					"isAssert48" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "54",
+			"type" : "OCR_TEXT_FIND",
+			"parameters" : [
+				{
+					"text54" : "",
+					"timeout54" : "100",			
+					"isAssert54" : "true"
+				}
+			]
+		}
+
+	]
+}

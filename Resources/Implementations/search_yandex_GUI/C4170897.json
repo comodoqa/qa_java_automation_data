@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_CONFIGURABLE_GUI",
+						"text34" : "kazakhstan#ENTER",
+						"expectedValue64" : "http://yandex.ru/yandsearch?text=test&clid=2051418"
+					}
+				]
+			}
+	]
+}

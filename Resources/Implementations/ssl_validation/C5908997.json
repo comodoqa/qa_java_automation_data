@@ -1,0 +1,40 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "expired.badssl.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_BROKEN_HTTPS",
+					"failMessage42" : "Failed for expired.badssl.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "3",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "revoked.badssl.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_BROKEN_HTTPS",
+					"failMessage42" : "Failed for revoked.badssl.com"
+				}
+			]
+		},
+		{	
+			"orderId" : "5",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "wrong.host.badssl.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_BROKEN_HTTPS",
+					"failMessage42" : "Failed for wrong.host.badssl.com"
+				}
+			]
+		}
+	]
+} 

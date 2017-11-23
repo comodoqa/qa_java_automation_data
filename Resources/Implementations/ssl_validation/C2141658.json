@@ -1,0 +1,16 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON",
+					"text34" : "mixed.badssl.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_MINOR_ERROS_HTTPS",
+					"failMessage42" : "Failed for mixed.badssl.com"
+				}
+			]
+		}
+	]
+} 

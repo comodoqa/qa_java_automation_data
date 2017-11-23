@@ -1,0 +1,16 @@
+{
+	"actions" : [
+		{	
+			"orderId" : "1",
+			"type" : "TEMPLATE",
+			"parameters" : [
+				{
+					"templateName" : "CHECK_SECURITY_ICON_INCOGNITO",
+					"text34" : "www.bbc.com#ENTER",
+					"image42" : "\\DRAGON_SSL_VALIDATION\\DRAGON_HTTP_INCOGNITO_ICON",
+					"failMessage42" : "Failed for www.bbc.com"
+				}
+			]
+		}
+	]
+} 

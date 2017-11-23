@@ -1,0 +1,251 @@
+{	
+	"orderId" : "",
+	"type" : "TEMPLATE",
+	"parameters" : [
+		{
+			"templateName" : "TEMPLATE_NAME"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "CLEAR_USER_DATA",
+	"parameters" : [
+		{
+			"path" : "Comodo\\Dragon",
+			"failMessage" : "Failed to clear user data",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "CLICK",
+	"parameters" : [
+		{
+			"image" : "",
+			"timeout" : "60000",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "CLOSE_PROCESS",
+	"parameters" : [
+		{ 
+			"processName" : "", 
+			"timeout" : "", 
+			"failMessage" : "Failed to close process", 
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "EXISTS_IN_COMODO_BROWSER_HISTORY",
+	"parameters" : [
+		{
+			"isPortable" : "false",
+			"expectedValue" : "",
+			"failMessage" : "Expected result does not match actual result\nExpected Result: %s\nActual Result: %s",
+			
+			"isCIDProvided" : "false",
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "EXISTS_IN_TEXT_FILE",
+	"parameters" : [
+		{ 
+			"filePath" : "",
+			"failMessage" : "browser is installed in configurable mode",
+			"text" : "",
+			
+			"isNegateResult" : "true",
+			"altFailMessage" : "browser is installed in provided mode",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "FILE_EXISTS",
+	"parameters" : [
+		{
+			"filePath" : "",
+			"failMessage" : "File does NOT exist",
+			
+			"isNegateResult" : "true",
+			"altFailMessage" : "File exists",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "FIND",
+	"parameters" : [
+		{
+			"image" : "",
+			"failMessage" : "Failed to find element",
+			"timeout" : "",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "HOVER",
+	"parameters" : [
+		{
+			"image" : "",
+			"failMessage" : "Failed to find element",
+			"timeout" : "",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "OCR_TEXT_FIND",
+	"parameters" : [
+		{
+			"text" : "Text to find",
+			"timeout" : "",			
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "REGISTRY_KEY_EXISTS",
+	"parameters" : [
+		{
+			"isLocalMachine" : "true",
+			"key" : "SOFTWARE\\ComodoGroup\\Dragon",
+			"value" : "Version",
+			"failMessage" : "Registry key does not exist",
+			
+			"isNegateResult" : "true"
+			"altFailMessage" : "Registry exists",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "RUN_CMD",
+	"parameters" : [
+		{
+			"command" : "",
+			"failMessage" : "Failed to run command",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "TYPE_COMBO",
+	"parameters" : [
+		{
+			"holdDown10" : "CTRL",
+			"key10" : "TAB",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "TYPE",
+	"parameters" : [
+		{
+			"text" : "",
+			
+			"modifiers6" : "WIN",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{
+	"orderId" : "",
+	"type" : "WAIT_FOR_PROCESS_TO_FINISH",
+	"parameters" : [
+		{
+			"processName" : "",
+			"timeout" : "",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}
+
+
+{	
+	"orderId" : "",
+	"type" : "WAIT",
+	"parameters" : [
+		{ 
+			"timeout" : "",
+			
+			"isOptional" : "false",
+			"isAssert" : "false"
+		}
+	]
+}

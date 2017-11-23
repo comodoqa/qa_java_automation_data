@@ -1,0 +1,15 @@
+{
+	"actions" : [
+			{	
+				"orderId" : "1",
+				"type" : "TEMPLATE",
+				"parameters" : [
+					{
+						"templateName" : "SEARCH_PROVIDED_SILENT",
+						"text35" : "netherlands#ENTER",
+						"expectedValue65" : "https://nl.search.yahoo.com/yhs/search?hspart=comodo&hsimp=yhs-com_chrome&p=test&type=%s_test001_ds_%s"
+					}
+				]
+			}
+	]
+}

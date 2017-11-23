@@ -1,0 +1,112 @@
+{
+	"actions" : [
+		{
+			"orderId" : "1",
+			"type" : "REGISTRY_KEY_EXISTS",
+			"x86_parameters" : [
+				{
+					"isLocalMachine1" : "true",
+					"key1" : "SOFTWARE\\ComodoGroup\\Dragon",
+					"value1" : "Version",
+					"failMessage1" : "Registry key does not exist"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"isLocalMachine1" : "true",
+					"key1" : "SOFTWARE\\WOW6432Node\\ComodoGroup\\Dragon",
+					"value1" : "Version",
+					"failMessage1" : "Registry key does not exist"
+				}
+			]
+		},
+		{
+			"orderId" : "4",
+			"type" : "FILE_EXISTS",
+			"x86_parameters" : [
+				{
+					"filePath4" : "C:\\Program Files\\Comodo\\Dragon\\dragon.exe",
+					"failMessage4" : "File does NOT exist"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"filePath4" : "C:\\Program Files (x86)\\Comodo\\Dragon\\dragon.exe",
+					"failMessage4" : "File does NOT exist"
+				}
+			]
+		},
+		{	
+			"orderId" : "7",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName7" : "dragon.exe", 
+					"timeout7" : "1000",
+					"failMessage7" : "Failed to close process",
+					"isOptional7" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "10",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName10" : "Un_A.exe", 
+					"timeout10" : "1000", 
+					"failMessage10" : "Failed to close process",
+					"isOptional10" : "true"
+				}
+			]
+		},
+		{	
+			"orderId" : "13",
+			"type" : "CLOSE_PROCESS",
+			"parameters" : [
+				{ 
+					"processName13" : "dragonsetup##version.exe", 
+					"timeout13" : "1000", 
+					"failMessage13" : "Failed to close process",
+					"isOptional13" : "true"
+				}
+			]
+		},
+		{
+			"orderId" : "16",
+			"type" : "RUN_CMD",
+			"x86_parameters" : [
+				{
+					"command16" : "C:\\Program Files\\Comodo\\Dragon\\uninstall.exe /S",
+					"failMessage16" : "Failed to run command"
+				}
+			],
+			"x64_parameters" : [
+				{
+					"command16" : "C:\\Program Files (x86)\\Comodo\\Dragon\\uninstall.exe /S",
+					"failMessage16" : "Failed to run command"
+				}
+			]
+		},
+		{	
+			"orderId" : "19",
+			"type" : "WAIT",
+			"parameters" : [
+				{ 
+					"timeout19" : "2000"
+				}
+			]
+		},
+		{
+			"orderId" : "22",
+			"type" : "WAIT_FOR_PROCESS_TO_FINISH",
+			"parameters" : [
+				{
+					"processName22" : "Un_A.exe",
+					"timeout22" : "60000",			
+					"isOptional22" : "true"
+				}
+			]
+		}
+	]
+}

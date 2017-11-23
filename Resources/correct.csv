@@ -1,0 +1,7 @@
+﻿"ID","Title","Case ID","Run Configuration","Run ID","Status"
+"T1","Test if PAAR messages are sent during begin of installation successfully","C1060114","Windows 10 x64","R61972","Untested"
+"T2","Test if PAAR messages are sent during end of installation successfully","C1078966","Windows 10 x64","R61972","Untested"
+"T3","Test if the correct version number is displayed in the "License Agreement" window","C1795951","Windows 10 x64","R61972","Untested"
+"T34215571","Test if Yahoo Homepage default URL is correct for United States (English)","C4170704","Windows 10 x64","R61972","Untested"
+"T5","Test if Yahoo Homepage default URL is correct for Germany","C4721550","Windows 10 x64","R61972","Freeze"
+"T34215572","Test if Yahoo Homepage default URL is correct for United States (English)","C4170705","Windows 10 x64","R61972","Untested"
